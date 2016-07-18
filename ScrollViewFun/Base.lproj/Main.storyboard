@@ -16,7 +16,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsk-dR-cUJ">
+                                <rect key="frame" x="0.0" y="46" width="375" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaI-Ll-WfV">
+                                        <rect key="frame" x="0.0" y="4" width="450" height="120"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="120" image="Anger" translatesAutoresizingMaskIntoConstraints="NO" id="41L-af-bia">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="120"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="120" image="Disgust" translatesAutoresizingMaskIntoConstraints="NO" id="rWb-WO-hpc">
+                                                <rect key="frame" x="90" y="0.0" width="90" height="120"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="120" image="Fear" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-7Z-IoS">
+                                                <rect key="frame" x="180" y="0.0" width="90" height="120"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="120" image="Joy" translatesAutoresizingMaskIntoConstraints="NO" id="xCF-ep-tr2">
+                                                <rect key="frame" x="270" y="0.0" width="90" height="120"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="90" placeholderIntrinsicHeight="120" image="Sadness" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-Rz-6P2">
+                                                <rect key="frame" x="360" y="0.0" width="90" height="120"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FaI-Ll-WfV" firstAttribute="leading" secondItem="Vsk-dR-cUJ" secondAttribute="leading" id="EO2-JQ-UtC"/>
+                                    <constraint firstAttribute="trailing" secondItem="FaI-Ll-WfV" secondAttribute="trailing" constant="-75" id="Prf-lE-Jec"/>
+                                    <constraint firstAttribute="bottom" secondItem="FaI-Ll-WfV" secondAttribute="bottom" constant="4" id="R0H-wT-Wa2"/>
+                                    <constraint firstItem="FaI-Ll-WfV" firstAttribute="centerY" secondItem="Vsk-dR-cUJ" secondAttribute="centerY" id="ou1-N4-9Co"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vsk-dR-cUJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="EEc-Yg-AGF"/>
+                            <constraint firstAttribute="trailing" secondItem="Vsk-dR-cUJ" secondAttribute="trailing" id="MZm-4w-18f"/>
+                            <constraint firstItem="Vsk-dR-cUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iDb-bl-DuU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vsk-dR-cUJ" secondAttribute="bottom" constant="493" id="xBR-yU-VsA"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -25,4 +64,11 @@
             <point key="canvasLocation" x="281.5" y="396.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Anger" width="412" height="634"/>
+        <image name="Disgust" width="414" height="630"/>
+        <image name="Fear" width="416" height="634"/>
+        <image name="Joy" width="406" height="636"/>
+        <image name="Sadness" width="406" height="636"/>
+    </resources>
 </document>
